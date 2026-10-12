@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏷️ TC OpenSCAD Card Script Generator</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #1e1e2e;
+            color: #cdd6f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 760px;
+            margin: 50px 20px;
+            background: #252538;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        h1 { color: #39fdc0; margin-top: 0; }
+        .tagline { font-size: 1.1em; color: #a6adc8; line-height: 1.5; }
+        .app-preview {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+        .btn-group { margin: 25px 0; display: flex; gap: 15px; flex-wrap: wrap; }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .btn-primary { background-color: #39fdc0; color: #1e1e2e; }
+        .btn-donate { background-color: #ffdd00; color: #000; }
+        .btn:hover { opacity: 0.9; }
+        ul { line-height: 1.8; }
+        .donation-box {
+            background: #11111b;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #ffdd00;
+            margin-top: 30px;
+        }
+        .qr-landscape-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .local-note {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .local-note h4 {
+            margin: 0 0 8px 0;
+            color: #cdd6f4;
+            font-size: 1rem;
+        }
+        .local-note p {
+            margin: 0 0 12px 0;
+            font-size: 0.95rem;
+            color: #a6adc8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏷️ TC OpenSCAD Card Script Generator</h1>
+        <p class="tagline">Interactive Python desktop designer for printable cards, event badges, and asset tags. Engineered for <strong>two-colour flush inlays</strong> on Bambu Lab 3D printers.</p>
+
+        <!-- App Screenshot -->
+        <img src="interface.jpg" alt="TC OpenSCAD Card Script Generator Interface" class="app-preview">
+
+        <div class="btn-group">
+            <a href="https://github.com/drtancheng/tc-card-generator/releases/latest" class="btn btn-primary">🚀 Download App (.zip)</a>
+            <a href="#donate" class="btn btn-donate">☕ Support / Donate</a>
+        </div>
+
+        <h2>✨ Core Capabilities</h2>
+        <ul>
+            <li><strong>Flush Inlay Technology:</strong> First-layer (0.20 mm) face-down printing ensures smooth, perfectly flat badge surfaces without raised text edges[cite: 9].</li>
+            <li><strong>Nozzle Printability Validation:</strong> Checks glyph stroke width and inter-stroke gaps against your nozzle diameter before slicing[cite: 9].</li>
+            <li><strong>Scannable QR Codes:</strong> Inlays real QR codes with automatic quiet zones and built-in optical scanning simulation[cite: 9].</li>
+            <li><strong>Dual STL Generation:</strong> Exports separate, pre-aligned inlay and plate STLs for multi-material slicing in Bambu Studio[cite: 9].</li>
+        </ul>
+
+        <div id="donate" class="donation-box">
+            <h3>💛 Support the Project</h3>
+            <p>If this utility streamlined your multi-colour 3D printing workflow, consider dropping a tip on Ko-fi!</p>
+            <a href="https://ko-fi.com/drtancheng" target="_blank" class="btn btn-donate">Buy Me a Coffee ☕</a>
+
+            <!-- Local Malaysian Support Note & Landscape Artwork -->
+            <div class="local-note">
+                <h4>Note for Malaysian supporters 🇲🇾</h4>
+                <p>For supporters in Malaysia who asked about local transfers, feel free to use the DuitNow QR.</p>
+                <img src="QR.jpg" alt="Local Support via DuitNow QR" class="qr-landscape-img">
+                <p style="margin-top: 12px; font-weight: bold; color: #39fdc0;">Thank you!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
