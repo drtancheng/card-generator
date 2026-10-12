@@ -20,6 +20,23 @@ Generates production-ready OpenSCAD scripts with flush two-colour inlays, auto-f
 * **True-Type Font Layout:** Automatic line-wrapping, font metrics calculations, and per-glyph stroke emboldening.
 * **One-Click Multi-STL Export:** Connects directly with the OpenSCAD CLI to export aligned `_1_inlay.stl` and `_2_plate.stl` dual-part files ready for Bambu Studio.
 
+## 📦 Prerequisites & Installation
+
+### 1. OpenSCAD (Required for Rendering & STL Export)
+To preview geometry or use the one-click dual-part STL export, OpenSCAD must be installed on your system:
+- **Download:** [openscad.org/downloads.html](https://openscad.org/downloads.html)
+- **Windows:** Default install paths (e.g., `C:\Program Files\OpenSCAD\openscad.exe`) are auto-detected, or you can point to it manually via the file picker if prompted.
+- **macOS / Linux:** Ensure `openscad` is in your `/Applications` folder or accessible via system `PATH`.
+
+### 2. Python Dependencies
+Install the required packages using pip:
+
+```bash
+# Core requirements (GUI, QR generation, image metrics)
+pip install customtkinter pillow qrcode
+
+# Optional: Required for simulated camera scan testing
+pip install opencv-python-headless numpy
   
 ### Note for Malaysian supporters 🇲🇾
 
